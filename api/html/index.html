@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Ride requester</title>
+  <style>
+  </style>
+
+  <script src="/jquery.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+
+  <button id="request-ride">Request ride!</button>
+  <button id="flight-done" style="display:none;">Flight done!</button>
+
+  <script>
+    $(function () {
+
+      var socket = io();
+      var pickupPoints;
+
+      socket.on('pickup points', (pickupPoints) => {
+        console.log(pickupPoints);
+      });
+      socket.emit('pickup points');
+      // socket.emit('connect drone', 'A');
+      // socket.emit('pos', {x: 50, y: 50});
+
+      socket.on('request flight error', (error) => {
+        alert(error);
+      });
+
+      socket.on('do flight', (flight) => {
+        console.log('doing flight', flight);
+        $('#flight-done').css('display', 'initial');
+      });
+
+      $('#flight-done').click((e) => {
+        e.preventDefault();
+        socket.emit('flight done');
+        $('#flight-done').css('display', 'none');
+      });
+      
+
+      $('#request-ride').click((e) => {
+        e.preventDefault();
+        socket.emit('request flight', {
+          from: 'Manhattan',
+          to: 'Times Square'
+        });
+        return false;
+      });
+    });
+
+  </script>
+</body>
+
+</html>

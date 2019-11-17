@@ -1,0 +1,19 @@
+2019-11-16T16:48:29.104404269 0.008563s notice: Recursively removing directory /home/elias/Dropbox/Hobby/GUH 2019/api/rethinkdb_data/tmp
+2019-11-16T16:48:29.111219522 0.015380s notice: Initializing directory /home/elias/Dropbox/Hobby/GUH 2019/api/rethinkdb_data
+2019-11-16T16:48:29.111298890 0.015457s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/elias/Dropbox/Hobby/GUH 2019/api/rethinkdb_data' did not already exist or is empty.)
+2019-11-16T16:48:29.111339122 0.015497s notice: Running rethinkdb 2.3.7~0bionic (CLANG 6.0.0 (tags/RELEASE_600/final))...
+2019-11-16T16:48:29.114374493 0.018535s notice: Running on Linux 5.0.0-36-generic x86_64
+2019-11-16T16:48:29.114436143 0.018594s notice: Loading data from directory /home/elias/Dropbox/Hobby/GUH 2019/api/rethinkdb_data
+2019-11-16T16:48:29.152282116 0.056441s info: Automatically using cache size of 5020 MB
+2019-11-16T16:48:29.154237378 0.058395s notice: Listening for intracluster connections on port 29015
+2019-11-16T16:48:29.157385840 0.061544s notice: Listening for client driver connections on port 28015
+2019-11-16T16:48:29.157509641 0.061667s notice: Listening for administrative HTTP connections on port 8080
+2019-11-16T16:48:29.157510738 0.061668s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2019-11-16T16:48:29.157512709 0.061670s notice: Listening on driver addresses: 127.0.0.1, ::1
+2019-11-16T16:48:29.157516240 0.061674s notice: Listening on http addresses: 127.0.0.1, ::1
+2019-11-16T16:48:29.157520095 0.061678s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2019-11-16T16:48:29.157524664 0.061682s notice: Server ready, "TPX1YG4_2os" 13ffe880-cd61-4532-a001-ef1f9d605f4b
+2019-11-16T17:10:13.395445861 1042.685503s notice: Someone asked for the nonwhitelisted file "/robots.txt".  If this should be accessible, add it to the static web assets.
+2019-11-16T17:12:30.087808294 1179.377865s info: Table 2d95cd34-cd80-4c98-ae2e-94f15c02cf9d: Starting a new Raft election for term 1.
+2019-11-16T17:12:30.088014232 1179.378071s info: Table 2d95cd34-cd80-4c98-ae2e-94f15c02cf9d: Added replica on this server.
+2019-11-16T17:12:30.093963416 1179.384020s info: Table 2d95cd34-cd80-4c98-ae2e-94f15c02cf9d: This server is Raft leader for term 1. Latest log index is 0.
