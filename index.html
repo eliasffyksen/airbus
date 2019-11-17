@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cityairbus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="http://172.20.10.2:3000/socket.io/socket.io.js" async> </script>
+</head>
+<body data-spy='scroll' data-target='.navbar'>
+    <!--- Navigation -->
+    <nav class="navbar " style='background-color: #fff'>
+        <!-- Logo and Text-->
+        <a class="navbar-brand mx-auto" href="#">
+            <img src="airbushori.png" alt="logo" style="width:180px;">
+        </a>
+        <!-- Links -->
+        <!-- <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#Features">Features</a>
+            </li>
+        </ul> -->
+    </nav>
+    <!--- End of Navigation--->
+    <!--- Start Landing Page Section -->
+    <div class='landing'>
+        <div class='home-wrap'>
+            <div class='home-inner'>
+            </div>
+        </div>
+    </div>
+
+    <div class='caption text-center'>
+        <h1>Welcome to CityAirbus</h1>
+        <h4>#On time in NewYork</h4>
+        <hr>
+        <!-- <a class='btn btn-outline-light btn-lg btn-primary' href='#bookingsection'>Get Started</a> -->
+    </div>
+    <!--- End Landing Page-->
+
+    <!--- Start Booking Section-->
+    <div class="container text-center">
+        <!-- heading <h1> -->
+        
+        <h1 class="course-heading">Pick-up Location <i class="fas fa-map-marker-alt"></i></h1>
+        <div class='row'>
+            <div class='col-xl-6 text-center' >
+                <select id='select1' class="point-picker">
+                    <option>Point 1</option>
+                    <option>Point 2</option>
+                    <option>Point 3</option>
+                    <option>Point 4</option>
+                    <option>Point 5</option>
+                </select>
+            </div>
+        </div>
+        <h1 class="course-heading">Drop-off Location  <i class="fas fa-flag-checkered"></i></i></h1>
+        <div class='row'>
+            <div class='col text-center'>
+                <select id='select2' class="point-picker">
+                    <option>Point 1</option>
+                    <option>Point 2</option>
+                    <option>Point 3</option>
+                    <option>Point 4</option>
+                    <option>Point 5</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class='col text-center'>
+            <button id='summit' type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </div>
+        <!-- End of Booking Section-->
+    <!--- Start Features Section-->
+    <div id='Features' class='offset'>
+    <!-- Start Jumbotron-->
+    <!-- <div class='jumbotron'>
+    <div class='narrow'> -->
+
+        <!-- <div class='col-12'>
+            <h3 class ='heading text-center'><u>Features</u></h3>
+            <div class='heading-underline'></div>
+        </div>
+
+        <div class='row text-center'>
+
+            <div class='col-md-6'>
+                <div class='feature'>
+                    <img src='auto.jpg'>
+                    <h3>Autonomy</h3>
+                    <p>Remote piloted</p>
+                </div>
+            </div>
+            <div class='col-md-6'>
+                <div class='feature'>
+                    <img src='timesaving.JPG'>
+                    <h3>Time-saving</h3>
+                    <p>3x faster than cars</p>
+                </div>
+            </div>
+        </div> -->
+
+    <!--End of Row-->
+    </div>
+    </div>
+    </div>
+
+    
+    <!-- End Jumbotron-->
+    <!-- End citymap section-->
+
+    
+    <script src='./script.js'></script>  
+</body>
+<!-- Start of Contact Section-->
+<div id='contact' class='offset'>
+<footer>  
+<div class='row justify-content-center'>
+    <div class='col-md-5 text-center'>
+        <img src='airbus.png' width = 60px height = 50px>
+        <p><b>CityAirbus</b></p>
+        <strong>Contact Info</strong>
+        <p>123 456 789<br>emaill@123.com<br>Manchester, UK</p>
+    </div>
+</div>  
+</div>
+</footer>
+
+
+</header>

@@ -1,0 +1,144 @@
+body
+{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
+.offset:before{
+    display: block;
+    content: '';
+    height: 4rem;
+    margin-top: 4rem;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited 
+{
+    background-color: #00205B !important;
+}
+.course-heading
+{
+    padding: 15px;
+}
+@import url(' href="https://fonts.googleapis.com/css?family=Lato:400,700');
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962
+}
+/*-- Navigation CSS--*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(255, 255, 255, 0.6)!important;
+}
+.navbar-brand{
+    height: 100px; 
+}
+.navbar-dark, .navbar-nav, .nav-link{
+    color: #00205B;
+}
+.navbar-dark, .navbar-nav, .nav-link.active,
+.navbar-dark, .navbar-nav, .nav-link:hover {
+    color: #00205B
+}
+
+/*--- Start of landing page---*/
+.home-inner{
+    background-image: url(airbushk.jpg);
+}
+.caption{
+    width: 100%;
+    max-width: 100%;
+    /* position: absolute; */
+    top: 38%;
+    z-index: 1;
+    color: #00205B;
+    text-transform: uppercase;
+}
+.caption h1{
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    padding-top: 15px;
+}
+.caption h3{
+    font-style: 2rem;
+}
+/*-- Select Box --*/
+select
+{
+    background: #fff;
+    color: #00205B;
+    border-style: solid;
+    outline: none;
+    width:160px;
+}
+
+.btn-lg{
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.3rem;
+}
+/*-- Features Section --*/
+.feature{
+    padding: 20px;
+}
+
+/*-- Citymap Section --*/
+.citymap img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .box{
+    position: static;
+    top: 50%;
+    Left: 90%;
+    transform: translate(-50%, -50%);
+}
+.box select{
+    background: #001b5b;
+    color: #fff;
+    padding: 10px;
+    width: 240px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    -webkit-appearance: button;
+    outline: none;
+} */
