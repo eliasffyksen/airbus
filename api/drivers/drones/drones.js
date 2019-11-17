@@ -12,8 +12,6 @@ const drones = require('./droneConfig').reduce((obj, id) => {
   return obj;
 }, {});
 
-var pickupPoints;
-
 exports.drones = drones;
 
 exports.connect = (id, socket) => {
@@ -106,6 +104,8 @@ exports.scheduleFlight = (flight) => {
     to: flight.to,
     from: flight.from
   });
+
+  flight.socket.emit('request flight success');
 
   bestDrone.socket.on('flight done', () => {
     bestDrone.flight = false;

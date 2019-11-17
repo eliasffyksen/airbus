@@ -5,8 +5,9 @@ const io = require('socket.io')(http);
 // const db = require('./drivers/rethinkdb');
 
 var pickupPoints = {
-  'Times Square': {x: 0, y: 0},
-  'Manhattan': {x: 50, y: 50}
+  'Times Square': { x: 10, y: -15 },
+  'Manhattan': { x: -10, y: 5 },
+  'Trump Tower': {x: 10, y: 2}
 };
 
 // db.connect()
@@ -35,12 +36,12 @@ io.on('connection', async (socket) => {
   socket.on('connect drone', (id) => {
     require('./events/drones')(socket, id);
   });
-  
+
   require('./events/flight-request')(socket, pickupPoints);
   require('./events/pickup-points')(socket, pickupPoints);
 });
 
-http.listen(3000, function(){
+http.listen(3000, function () {
   console.log('listening on *:3000');
 });
 
