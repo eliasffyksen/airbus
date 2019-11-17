@@ -79,6 +79,7 @@ public class HeliFli : MonoBehaviour
     public void doFlight(SocketIOEvent e) {
         string from = e.data.GetField("from").GetField("name").str;
         string to = e.data.GetField("to").GetField("name").str;
+        fS = "lift";
 
         if (from == "Manhattan")
         {
