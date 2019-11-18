@@ -2,4 +2,4 @@
 
 Please feel free to update this beautiful project. 
 
-Created by Hoi Kenny Cheng, Ellias Fyksen and Patryk Sipowicz. 
+Created by Kenny Cheng, Ellias Fyksen and Patryk Sipowicz. 
