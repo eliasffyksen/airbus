@@ -5,9 +5,12 @@ const io = require('socket.io')(http);
 // const db = require('./drivers/rethinkdb');
 
 var pickupPoints = {
-  'Times Square': { x: 10, y: -15 },
-  'Manhattan': { x: -10, y: 5 },
-  'Trump Tower': {x: 10, y: 2}
+  'Times Square': { x: -225, y: 318 },
+  'Manhattan': { x: 170, y: -190 },
+  'Trump Tower': {x: 14, y: 16},
+  'Central Park': {x: 110, y: -100},
+  'Empire State Building': {x: -180, y: -100}
+
 };
 
 // db.connect()
